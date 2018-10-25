@@ -374,12 +374,13 @@ form {
 
 .formdiv .form-control {
   line-height: 30px;
-  height: 42px;
-  padding: 6px 12px 6px 37px;
+  height: 50px;
+  padding: 0px 9px 6px 37px;
   border-radius: 0;
   background-color: #ffffff;
   margin-bottom: 15px;
-  color: #898989; }
+  color: #797979;
+  font-size: 14px; }
 
 .formdiv textarea.form-control {
   height: 99px;
@@ -553,8 +554,8 @@ form {
   right: -52px; }
 
 .price {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background: #ff1818;
   padding: 8px;
@@ -567,14 +568,16 @@ form {
     flex-direction: column;
     justify-content: center; }
     .price .round b {
-      font: bold 34px/32px "Montserrat", sans-serif;
+      font: bold 34px/32px "Open Sans", sans-serif;
       color: #ffea3a;
       text-align: center;
-      padding-bottom: 15px; }
+      padding-bottom: 15px;
+      font-weight: 900; }
       .price .round b sup {
         font-size: 24px; }
     .price .round span {
-      font: 500 16px/16px "Montserrat", sans-serif;
+      font: 500 16px/16px "Open Sans", sans-serif;
+      font-weight: 800;
       color: #fff;
       text-align: right;
       text-decoration: line-through;
@@ -601,6 +604,7 @@ form {
   display: inline-block;
   padding: 10px 30px;
   color: #fff;
+  font-weight: 800;
   border: none; }
   .standard-button b {
     display: block;
@@ -660,7 +664,7 @@ form {
   font-weight: 500; }
 
 .about-goods {
-  background: url("../images/bg-banner.png") no-repeat center center;
+  background: url("../images/bg-banner-big.jpg") no-repeat center center;
   background-size: cover;
   padding: 40px 0px;}
   .about-goods h1 {
@@ -696,12 +700,13 @@ form {
         position: relative;
         left: -15px; }
   .about-goods .image-wrapper {
-    position: relative; }
+    position: relative;
+    left: -75px;}
   .about-goods .timer-wrapper {
     margin-bottom: 20px; }
   .about-goods .price {
-    right: 0;
-    top: 0; }
+    right: -78px;
+    top: -26px;}
   .about-goods.last {
     background: url("../images/last.png") no-repeat center center;
     background-size: cover; }
@@ -909,7 +914,7 @@ form {
       .comments .slick-dots li:last-child {
         margin-right: 0; }
       .comments .slick-dots li.slick-active button {
-        background: #8dc24d; }
+        background: #545454; }
   .comments .slick-slide .centered img {
     margin: 0 auto; }
 .comments .rate {
@@ -1022,7 +1027,10 @@ form {
   .video:after {
     display: none; }
   img {
-    max-width: 100%; } }
+    max-width: 95%; }
+  .about-goods .image-wrapper {
+    position: relative;
+    left: 0;}}
 
 @media only screen and (max-width: 990px) {
   .description {
@@ -1076,11 +1084,14 @@ form {
   .steps-list {
     padding-top: 20px; }
   .about-goods {
-    background: url("../images/bg-banner.png") no-repeat;
-    background-position: right;
+    background: url("../images/bg-banner.jpg") no-repeat;
+    background-position: top;
     background-size: cover; padding: 10px 0px;}
     .about-goods h1 {
       font-size: 28px; }
+    .about-goods h2 {
+      text-align: center;
+    }
     .about-goods .center-pos {
       right: 8%; }
     .about-goods .button-wrapper {
@@ -1115,7 +1126,10 @@ form {
       text-align: center; }
     .description .button-wrapper {
       text-align: center;
-      margin-bottom: 15px; } }
+      margin-bottom: 15px; }
+  .video-block{
+  background-image: none;}
+}
 
 
 
@@ -1214,10 +1228,10 @@ form {
   background: #fff url(../images/cutter-2.png) 50% 27% no-repeat;
 }
 .bag-block.second {
-    background: url(../images/cutter-3.png) 95% 19% no-repeat;
+    background: #fff url(../images/cutter-3.png) 95% 19% no-repeat;
 }
 .bag-block.third{
-    background: url(../images/cutter-4.png) -27% 50% no-repeat;
+    background: #fff url(../images/cutter-4.png) -27% 50% no-repeat;
 }
 
 .pd-left{
@@ -1339,7 +1353,7 @@ form {
   border-radius: 100px;
 }
 .carousel-indicators li.active{
-  background-color:#5d40c7!important;
+  background-color: #2d2d2d !important;
 }
 .carousel-indicators{
   bottom: -10px;
@@ -1356,8 +1370,8 @@ form {
 
 @media(max-width: 1024px){
 .center-block-img{
-   margin: 0px auto;
-   display: block;
+  margin: 36px auto;
+  display: block;
  }
  .offer-span{
   margin-left: 0px;
@@ -1365,7 +1379,15 @@ form {
   width: 330px;
  }
 }
+@media (max-width:1199px)and (min-width:767px) {
+  .play_cover {
+    top: -15px;
+  }
 
+  .about-goods .price {
+    right: -20px;
+  }
+}
 @media(max-width: 767px){
 
   .mg-image{
@@ -1377,7 +1399,7 @@ form {
   }
 
   .screen-three{
-    background: url(../images/bg-banner2.jpg)no-repeat center center;
+    background: url(../images/bg-banner2-small.jpg)no-repeat center top;
     background-size: cover;
     padding: 20px 20px;
   }
@@ -1419,14 +1441,40 @@ form {
   .video-content{
     text-align: center;
   }
+  .video-block{
+    background: url(../images/Layer1742-small.png) center bottom no-repeat;
+    padding: 30px 15px 269px 15px;
+  }
+  .video-block h3 {
+    font-size: 27px;
+  }
+  .video-block h2 {
+    margin: 14px 0px;
+    color: #000;
+  }
+  .video-block .text-center {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  .video-block .container {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+  .video-block p {
+    line-height: 24px;
+  }
   .pd-left{
-    padding-left: 15px;
+    padding-left: 5px;
   }
   .pd-right{
-    padding-right: 15px;
+    padding-right: 5px;
   }
   .block-bag{
     margin-bottom: 20px;
+  }
+  .bag-block {
+    width: 100%;
+    height: 193px;
   }
   .steps-block ul li:before{
     display: none;
@@ -1436,8 +1484,9 @@ form {
     width: 100%;
   }
   .steps-block ul li h3{
-    margin-top: 8px;
+    margin-top: 32px;
   }
+
   .steps-block ul li:after{
     position: absolute;
     content: url(../images/arrow-down2.png);
@@ -1458,11 +1507,45 @@ form {
   .mg-mbl{
     margin-bottom: 30px;
   }
-  .video-content p{
-    font-weight: bold;
-  }
+
   .mg-image{
     display: block;
     margin: 0px auto;
+  }
+}
+
+@media(max-width: 320px) {
+  .play_cover {
+    background: url(../images/youtube-small.jpg) no-repeat center center;
+  }
+  .screen-three .row {
+    padding-top: 12px;
+    padding-bottom: 26px;
+  }
+  .screen-three .container{
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+  .screen-three h2{
+    font-size: 27px;
+    margin-bottom: 8px;
+    font-weight: 900;
+  }
+  .faq {
+    padding: 16px 0 250px 0;
+    background: #f6f6f6 url(../images/bg-banner4-small.png) 50% bottom no-repeat;
+  }
+  .faq h1 {
+    margin-bottom: 16px;
+  }
+  .faq ul li {
+    margin-bottom: 24px;
+  }
+  .faq ul li h2 {
+    padding: 6px 31px 6px 8px;
+  }
+  .goods-bottom h1 {
+    margin-top: 16px;
+    line-height: 28px;
   }
 }
