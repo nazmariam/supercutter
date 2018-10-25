@@ -181,7 +181,7 @@ form {
               width: 100%; }
   form .pagination {
     justify-content: center;
-    margin-bottom: 20px; }
+    margin-bottom: 8px;}
     form .pagination span {
       border: 2px solid #fff;
       background: transparent;
@@ -1586,10 +1586,20 @@ form {
     margin-bottom: 24px;
   }
   .faq ul li h2 {
-    padding: 6px 31px 6px 8px;
+    padding: 6px 37px 6px 3px;
+    font-size: 18px;
   }
   .goods-bottom h1 {
     margin-top: 16px;
     line-height: 28px;
+  }
+  .bag-block.first {
+    background: #fff url(../images/cutter1-small.jpg) 50% 27% no-repeat;
+  }
+  .bag-block.second {
+    background: #fff url(../images/cutter2-small.jpg) 50% 27% no-repeat;
+  }
+  .bag-block.third {
+    background: #fff url(../images/cutter3-small.jpg) 50% 27% no-repeat;
   }
 }
