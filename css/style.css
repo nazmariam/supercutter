@@ -1419,6 +1419,7 @@ form {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
+    max-width: 100%;
   }
   .secureicons{
     width: 100%;
