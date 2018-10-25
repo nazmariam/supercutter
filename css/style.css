@@ -577,8 +577,8 @@ form {
   right: -52px; }
 
 .price {
-  width: 100px;
-  height: 100px;
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
   background: #ff1818;
   padding: 8px;
@@ -728,8 +728,9 @@ form {
   .about-goods .timer-wrapper {
     margin-bottom: 20px; }
   .about-goods .price {
-    right: -78px;
-    top: -26px;}
+    right: -35px;
+    top: -44px;
+  }
   .about-goods.last {
     background: url("../images/last.png") no-repeat center center;
     background-size: cover; }
