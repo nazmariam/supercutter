@@ -50,7 +50,9 @@ $( document ).ready(function() {
 
     $('.play_cover').click(function () {
         $(this).hide();
+        const vid2 = document.getElementById("click-img");
         const vid = document.getElementById("top_video");
+        $(vid2).hide();
         // vid.controls = false;
         vid.play();
     });
