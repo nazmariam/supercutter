@@ -526,12 +526,12 @@ form {
     .flip-clock-wrapper ul li a div.down {
       border-radius: 0 !important; }
     .flip-clock-wrapper ul li a div div.inn {
-      background-color: #fff;
-      color: #000;
+      background-color: #d5efff;
+      color: #226083;
       text-shadow: none;
       font-size: 43px;
       line-height: 68px;
-      font-weight: 600;
+      font-weight: 900;
       border-radius: 0; }
 
 .flip-clock-divider {
@@ -610,25 +610,35 @@ form {
         font-size: 12px; }
 
 .standard-button {
-  background: #ff0041;
-  /* Old browsers */
-  /*background: -moz-linear-gradient(45deg, #da242a 0%, #e43339 44%, #ed4046 63%, #ff5a5f 88%, #ff5a5f 88%);*/
-  /*!* FF3.6-15 *!*/
-  /*background: -webkit-linear-gradient(45deg, #da242a 0%,#e43339 44%,#ed4046 63%,#ff5a5f 88%,#ff5a5f 88%);*/
-  /*!* Chrome10-25,Safari5.1-6 *!*/
-  /*background: linear-gradient(45deg, #da242a 0%,#e43339 44%,#ed4046 63%,#ff5a5f 88%,#ff5a5f 88%);*/
-  /*!* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
+
+  /*background: #24AB3E;*/
+  /*background: linear-gradient(45deg, #ff5a5f 8%,#ff5a5f 8%,#ed4046 32%,#ff5a5f 49%,#ff5a5f 49%,#e43339 73%,#e43339 73%,#da242a 98%,#da242a 98%);*/
+  transition: all 300ms ease-in-out;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  background: #24AB3E;
+  background: linear-gradient(45deg, #8fe126 0%,#0a9d44 44%,#24ab3e 63%,#0a9d44 88%,#0a9d44 88%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da242a', endColorstr='#ff5a5f',GradientType=1 );
-  -webkit-transition: all 300ms ease-in-out;
-  -moz-transition: all 300ms ease-in-out;
-  -ms-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
   display: inline-block;
   padding: 10px 30px;
   color: #fff;
   font-weight: 800;
-  border: none; }
+  border: none;
+  position: relative;
+  box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.3);
+}
+.standard-button:before{
+  content: '';
+  position: absolute;
+  border: 2px solid #6ac735;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+}
   .standard-button b {
     display: block;
     text-align: center;
@@ -647,20 +657,8 @@ form {
     text-transform: uppercase;
   }
   .standard-button:hover {
-   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5a5f+8,ff5a5f+8,ed4046+32,ff5a5f+49,ff5a5f+49,e43339+73,e43339+73,da242a+98,da242a+98 */
-  /*background: #ff5a5f;*/
-  /*!* Old browsers *!*/
-  /*background: -moz-linear-gradient(45deg, #ff5a5f 8%, #ff5a5f 8%, #ed4046 32%, #ff5a5f 49%, #ff5a5f 49%, #e43339 73%, #e43339 73%, #da242a 98%, #da242a 98%);*/
-  /*!* FF3.6-15 *!*/
-  /*background: -webkit-linear-gradient(45deg, #ff5a5f 8%,#ff5a5f 8%,#ed4046 32%,#ff5a5f 49%,#ff5a5f 49%,#e43339 73%,#e43339 73%,#da242a 98%,#da242a 98%);*/
-  /*!* Chrome10-25,Safari5.1-6 *!*/
-  /*background: linear-gradient(45deg, #ff5a5f 8%,#ff5a5f 8%,#ed4046 32%,#ff5a5f 49%,#ff5a5f 49%,#e43339 73%,#e43339 73%,#da242a 98%,#da242a 98%);*/
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5a5f', endColorstr='#da242a',GradientType=1 );
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    -ms-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
+   background: #6ac735;
+   background: linear-gradient(45deg, #0a9d44  8%,#0a9d44  8%,#24ab3e 32%,#0a9d44  49%,#0a9d44 49%,#8fe126  73%,#8fe126 73%,#8FE126  98%,#8FE126 98%);
     transition: all 300ms ease-in-out;
     text-decoration: none;
     color: #fff;
@@ -691,25 +689,42 @@ form {
   background-size: cover;
   padding: 40px 0;}
   .about-goods h1 {
-    font-size: 33px;
-    line-height: 32px;
-    color: #feff9b;
+    font-size: 36px;
+    line-height: 34px;
+    color: #000;
     width: 100%;
     display: block;
     font-family: 'Montserrat', cursive;
     margin-bottom: 60px;
     font-weight: 800;
-    text-shadow: 2px 2px 2px #080808;
   }
+  .about-goods .top-description{
+    margin: 0px auto 40px;
+    color: #000;
+    text-shadow: none;
+    font-weight: 600;
+    border: none;
+    padding: 0;
+  }
+
+  .about-goods .top-good-container {
+    display: flex;
+  }
+
   .about-goods h2 {
     font-size: 20px;
     line-height: 28px;
-    color: #fff;
-    text-align: left;
     font-weight: 700;
-    margin-bottom: 35px;
     font-family: 'Open Sans', sans-serif;
-    text-shadow: 2px 2px 1px #252525; }
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 6px;
+  }
+  .good-description {
+    background: #ffffff8f;
+    margin: 40px 0;
+    padding: 6px;
+  }
   .about-goods h3 {
     font-size: 22px;
     line-height: 24px;
@@ -724,16 +739,21 @@ form {
         left: -15px; }
   .about-goods .image-wrapper {
     position: relative;
-    left: -75px;}
+    margin-left: 20px;
+  }
   .about-goods .timer-wrapper {
     margin-bottom: 20px; }
   .about-goods .price {
-    right: -35px;
-    top: -44px;
+    top: 0px;
   }
   .about-goods.last {
     background: url("../images/last.png") no-repeat center center;
-    background-size: cover; }
+    background-size: cover;
+  }
+  .good-timer {
+    padding: 0 27px 0 27px;
+  }
+
 
 .video {
   padding: 35px 0 40px;
@@ -1114,9 +1134,10 @@ form {
   .steps-list {
     padding-top: 20px; }
   .about-goods {
-    background: url("../images/bg-banner.jpg") no-repeat;
-    background-position: top;
-    background-size: cover; padding: 10px 0;}
+    /*background: url("../images/bg-banner.jpg") no-repeat;*/
+    /*background-position: top;*/
+    /*background-size: cover; padding: 10px 0;*/
+  }
     .about-goods h1 {
       font-size: 28px; }
     .about-goods h2 {
@@ -1133,6 +1154,9 @@ form {
       padding: 0; }
       .about-goods ul li .arrow-position {
         display: none; }
+  .top-good-container {
+    flex-direction: column;
+  }
   .video {
     padding-bottom: 0; }
     .video .button-wrapper {
@@ -1582,6 +1606,14 @@ form {
 
 
 @media(max-width: 320px) {
+  .about-goods {
+    background: url(../images/bg-banner.jpg) no-repeat;
+    background-size: contain;
+    padding: 10px 0;
+  }
+  .top-good-container {
+    margin-top: 224px;
+  }
   .play_cover {
     background: url(../images/youtube-small.jpg) no-repeat center center;
   }
